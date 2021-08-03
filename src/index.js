@@ -14,9 +14,15 @@ const onClickAdd = () => {
 
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+    console.log("完了ボタン押下");
+  });
 
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
+  deleteButton.addEventListener("click", () => {
+    console.log("削除ボタン押下");
+  });
 
   div.appendChild(li);
   div.appendChild(completeButton);
